@@ -6,12 +6,12 @@
 var app=angular.module("app",[]);
 
 function PruebaController($scope) {
-  $scope.mensaje="Hola Mundo";
-  $scope.mensaje="Adios mundo cruel :-)";
+  $scope.mensaje="Mensaje1";
+  $scope.mensaje="Mensaje2";
   
   $scope.cambiarMensaje2=function() {
-    $scope.mensaje="A tomar cafe";
-    $scope.mensaje2="Que sean dos";
+    $scope.mensaje="Cambiar Mensaje1";
+    $scope.mensaje2="Cambiar Mensaje2";
 };
 }
 

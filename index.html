@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
+
     <head>
         <title>Intro Angular</title>
          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
         <script src="script.js"></script>
     
-  </head>
+    </head>
+    
     <body ng-controller="PruebaController">
-       <h1>Probando el {{mensaje}}</h1>
-       <h2>Segundo mensaje {{mensaje2}}</h1> 
+       
+       <h1>Aqui hace binding de mensaje: {{mensaje}}</h1>
+       <h2>Aqui hace binding de mensaje: {{mensaje2}}</h2> 
+       
        <button ng-click="cambiarMensaje2()">Cambiar Mensaje</button>
+       <br>
+       Mensaje2: <input type="text" ng-model="mensaje2"/>
+       <h3>{{mensaje2}}</h3>
        
     </body>
+
 </html>
